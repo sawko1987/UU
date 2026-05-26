@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет Услуг — приложение для мастеров и сервисных компаний</title>
+    <meta name="description" content="Мобильное приложение для учета заказов, клиентов и финансов. Генерация договоров, квитанций, актов. Работайте офлайн, синхронизируйтесь в облако.">
+    <meta name="keywords" content="учет услуг, учет заказов, CRM для мастера, договор на услуги, акт выполненных работ, сервисный учет">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Учет Услуг — приложение для мастеров и сервисных компаний">
+    <meta property="og:description" content="Забудьте о блокнотах и Excel. Учет заказов, клиентов, финансов и генерация документов в одном приложении.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://servicedochub.ru">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Учет Услуг — приложение для мастеров">
+    <meta name="twitter:description" content="Учет заказов, клиентов, финансов и генерация документов за секунды.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Учет Услуг",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "RUB"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "10000"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                </div>
+                <span>Учет Услуг</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#problems" class="nav-link">Проблемы</a>
+                <a href="#features" class="nav-link">Возможности</a>
+                <a href="#day" class="nav-link">Как это работает</a>
+                <a href="#screenshots" class="nav-link">Скриншоты</a>
+                <a href="#pricing" class="nav-link">Тарифы</a>
+                <a href="https://www.rustore.ru/catalog/app/ru.servicedochub.app" class="nav-cta" target="_blank">Скачать</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <svg class="blob blob-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="rgba(99,102,241,0.15)" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.6,-46.6C91.4,-34.1,98.1,-19.2,95.8,-5.3C93.5,8.6,82.2,21.5,70.6,32.2C59,42.9,47.1,51.4,34.8,58.3C22.5,65.2,9.8,70.5,-1.8,73.6C-13.4,76.7,-23.9,77.6,-34.3,73.1C-44.7,68.6,-55,59.7,-63.6,49.1C-72.2,38.5,-79.1,26.2,-81.6,12.9C-84.1,-0.4,-82.2,-14.7,-75.6,-27.3C-69,-39.9,-57.7,-50.8,-45.3,-58.8C-32.9,-66.8,-19.4,-71.9,-4.9,-63.5C9.6,-55.1,19.2,-33.2,30.5,-24.5C41.8,-15.8,54.8,-10.3,44.7,-76.4Z" transform="translate(100 100)"/>
+            </svg>
+            <svg class="blob blob-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="rgba(236,72,153,0.1)" d="M39.9,-65.7C53.1,-58.4,66.1,-50.3,74.6,-38.9C83.1,-27.5,87.1,-12.8,84.6,0.9C82.1,14.6,73.1,27.3,63.1,38.1C53.1,48.9,42.1,57.8,29.8,64.2C17.5,70.6,3.9,74.5,-8.8,73.2C-21.5,71.9,-33.3,65.4,-44.2,57.1C-55.1,48.8,-65.1,38.7,-71.6,26.3C-78.1,13.9,-81.1,-0.8,-77.5,-14.3C-73.9,-27.8,-63.7,-40.1,-51.8,-48.1C-39.9,-56.1,-26.3,-59.8,-12.8,-61.5C0.7,-63.2,14.1,-62.9,26.7,-72.9Z" transform="translate(100 100)"/>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text animate-in">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="scramble-text" data-text="Версия 2.0 уже доступна">Версия 2.0 уже доступна</span>
+                </div>
+                <h1 class="hero-title">
+                    Наведите порядок<br>
+                    <span class="gradient-text scramble-text" data-text="в сервисном бизнесе">в сервисном бизнесе</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Забудьте о блокнотах и Excel. Учет заказов, клиентов, финансов и генерация профессиональных документов — всё в одном приложении.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://www.rustore.ru/catalog/app/ru.servicedochub.app" class="btn-primary magnetic" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        Скачать бесплатно
+                    </a>
+                    <a href="#problems" class="btn-secondary magnetic">Узнать больше</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="10000">0</div>
+                        <div class="stat-label">Пользователей</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="50000">0</div>
+                        <div class="stat-label">Документов создано</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="4.8" data-decimal="true">0</div>
+                        <div class="stat-label">Рейтинг в RuStore</div>
+                    </div>
+                </div>
+                <div class="hero-tags">
+                    <span class="tag">Бесплатно</span>
+                    <span class="tag">Без рекламы</span>
+                    <span class="tag">Работает офлайн</span>
+                </div>
+            </div>
+            <div class="hero-visual animate-in">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <img src="images/screenshots/screen_orders_list.jpg" alt="Главный экран приложения" loading="eager">
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Заказ №145 создан</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>+15 000 ₽ сегодня</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        <span>Новый PDF создан</span>
+                    </div>
+                    <div class="floating-card card-4">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Новый клиент</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <section class="trust-banner">
+        <div class="trust-container">
+            <p class="trust-title">Надежное решение для вашего бизнеса</p>
+            <div class="trust-badges">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <span>Безопасные данные</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Проверено RuStore</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Экономия времени</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <span>Работает быстро</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Problems vs Solutions Section -->
+    <section class="problems" id="problems">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Знакомые ситуации?</span>
+                <h2 class="section-title">Мы создали приложение,<br>чтобы решить ваши <span class="gradient-text">главные боли</span></h2>
+                <p class="section-subtitle">Каждый день тысячи мастеров сталкиваются с одними и теми же проблемами. Мы знаем, как их закрыть.</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-side">
+                        <div class="problem-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Забываете о заказах?</h3>
+                        <p>Стикеры теряются, записи в телефоне смешиваются. Клиенты ждут, а вы забыли перезвонить. Репутация страдает.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="solution-side">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Все заказы в одном месте</h3>
+                        <p>Календарь, напоминания, статусы. Ни один заказ не потеряется — приложение напомнит о каждом выезде.</p>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-animate>
+                    <div class="problem-side">
+                        <div class="problem-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Тратите вечер на бумаги?</h3>
+                        <p>Договора в Word, печать, сканирование. На оформление одного документа уходит час, а заказов десятки.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="solution-side">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>PDF-документы за 30 секунд</h3>
+                        <p>Договор, спецификация, счёт, акт — всё генерируется автоматически. Отправьте клиенту прямо из приложения.</p>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-animate>
+                    <div class="problem-side">
+                        <div class="problem-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Не знаете реальную прибыль?</h3>
+                        <p>Деньги на материалы, личные траты и доходы смешаны. В конце месяца непонятно — в плюсе вы или нет.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="solution-side">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Чистая прибыль видна сразу</h3>
+                        <p>Автоматический расчёт доходов, расходов и прибыли по каждому заказу и за любой период.</p>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-animate>
+                    <div class="problem-side">
+                        <div class="problem-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Теряете клиентов?</h3>
+                        <p>Нет базы клиентов. Контакты в мессенджерах, переписка теряется. Постоянным заказчикам не уделяете внимания.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="solution-side">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Полная база клиентов</h3>
+                        <p>История заказов, контакты, заметки по каждому клиенту. Никто не потеряется, постоянные клиенты останутся с вами.</p>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-animate>
+                    <div class="problem-side">
+                        <div class="problem-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Клиенты не платят вовремя?</h3>
+                        <p>Нет контроля оплаты. Долги копятся, а вы стесняетесь напоминать. Дебиторка растёт незаметно.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="solution-side">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Контроль оплаты и дебиторка</h3>
+                        <p>Статус оплаты по каждому заказу. Видно, кто должен и сколько. Напоминания помогут получить деньги вовремя.</p>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-animate>
+                    <div class="problem-side">
+                        <div class="problem-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Выглядите непрофессионально?</h3>
+                        <p>Документы "на коленке", без реквизитов, с ошибками. Крупные клиенты сомневаются — выглядит любительски.</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="solution-side">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Юридически грамотные шаблоны</h3>
+                        <p>Профессиональные документы с вашими реквизитами. Автозаполнение, цифровые подписи, отправка в мессенджеры.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience" id="audience">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Для кого</span>
+                <h2 class="section-title">Кому подойдёт<br><span class="gradient-text">приложение</span></h2>
+                <p class="section-subtitle">Независимо от масштаба — от частного мастера до сервисной компании</p>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card" data-animate>
+                    <div class="audience-avatar">👨‍🔧</div>
+                    <h3>Сервисные мастера</h3>
+                    <p>Сантехники, электрики, климат-мастера, мебельщики. Учёт каждого выезда и клиента.</p>
+                    <div class="audience-stats">
+                        <span class="audience-stat">65% пользователей</span>
+                    </div>
+                </div>
+                <div class="audience-card" data-animate>
+                    <div class="audience-avatar">🏗️</div>
+                    <h3>Ремонтные бригады</h3>
+                    <p>Бригадиры и малый бизнес. Распределение заказов, учёт материалов и зарплат.</p>
+                    <div class="audience-stats">
+                        <span class="audience-stat">20% пользователей</span>
+                    </div>
+                </div>
+                <div class="audience-card" data-animate>
+                    <div class="audience-avatar">📋</div>
+                    <h3>Самозанятые и ИП</h3>
+                    <p>Индивидуальные предприниматели. Документы для налоговой, учёт доходов и расходов.</p>
+                    <div class="audience-stats">
+                        <span class="audience-stat">10% пользователей</span>
+                    </div>
+                </div>
+                <div class="audience-card" data-animate>
+                    <div class="audience-avatar">🏢</div>
+                    <h3>Сервисные компании</h3>
+                    <p>Компании с несколькими бригадами. Единая база, аналитика, контроль финансов.</p>
+                    <div class="audience-stats">
+                        <span class="audience-stat">5% пользователей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Day in the Life / Storytelling Section -->
+    <section class="day" id="day">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Как это работает</span>
+                <h2 class="section-title">Один день мастера<br><span class="gradient-text">с приложением</span></h2>
+                <p class="section-subtitle">Пройдите путь от утреннего кофе до вечерней аналитики</p>
+            </div>
+            <div class="day-timeline">
+                <div class="day-step" data-animate>
+                    <div class="day-time">08:00</div>
+                    <div class="day-content">
+                        <div class="day-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Открываю приложение — вижу план на день</h3>
+                        <p>Все предстоящие заказы с адресами, телефонами и статусами. Звоню клиентам прямо из приложения — один тап.</p>
+                    </div>
+                    <div class="day-visual">
+                        <div class="phone-small">
+                            <img src="images/screenshots/screen_upcoming_orders.jpg" alt="Предстоящие заказы" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="day-step reverse" data-animate>
+                    <div class="day-time">11:30</div>
+                    <div class="day-content">
+                        <div class="day-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h3>Создаю заказ и добавляю клиента</h3>
+                        <p>На объекте быстро оформляю заказ: вид работ, стоимость, адрес. Клиент автоматически попадает в базу.</p>
+                    </div>
+                    <div class="day-visual">
+                        <div class="phone-small">
+                            <img src="images/screenshots/screen_orders_list.jpg" alt="Список заказов" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="day-step" data-animate>
+                    <div class="day-time">16:00</div>
+                    <div class="day-content">
+                        <div class="day-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Генерирую договор и счёт за 30 секунд</h3>
+                        <p>Выбираю шаблон, данные подставляются автоматически. Отправляю PDF клиенту в WhatsApp прямо из приложения.</p>
+                    </div>
+                    <div class="day-visual">
+                        <div class="phone-small">
+                            <img src="images/screenshots/screen_document_package.jpg" alt="Пакет документов" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="day-step reverse" data-animate>
+                    <div class="day-time">20:00</div>
+                    <div class="day-content">
+                        <div class="day-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Смотрю аналитику доходов за день</h3>
+                        <p>Чистая прибыль, выручка, расходы — всё наглядно. Понимаю, сколько реально заработал, и планирую завтра.</p>
+                    </div>
+                    <div class="day-visual">
+                        <div class="phone-small">
+                            <img src="images/screenshots/screen_analytics.jpg" alt="Финансовая аналитика" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Возможности</span>
+                <h2 class="section-title">Всё необходимое<br>для вашего <span class="gradient-text">бизнеса</span></h2>
+                <p class="section-subtitle">Мощный инструментарий в простом и понятном интерфейсе</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card tilt-card" data-animate>
+                    <div class="feature-icon icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Учет заказов</h3>
+                    <p class="feature-desc">Создавайте, отслеживайте и управляйте заказами. Статусы, фильтры, поиск, календарь — всё для эффективной работы.</p>
+                </div>
+
+                <div class="feature-card tilt-card" data-animate>
+                    <div class="feature-icon icon-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">База клиентов</h3>
+                    <p class="feature-desc">Полная информация о клиентах, история заказов, контакты. Никогда не теряйте важные данные.</p>
+                </div>
+
+                <div class="feature-card tilt-card" data-animate>
+                    <div class="feature-icon icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Генерация документов</h3>
+                    <p class="feature-desc">Договоры, квитанции, акты, спецификации, счета, гарантии — всё в PDF за секунды.</p>
+                </div>
+
+                <div class="feature-card tilt-card" data-animate>
+                    <div class="feature-icon icon-orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Финансовый учет</h3>
+                    <p class="feature-desc">Доходы, расходы, прибыль по заказам и периодам. Наглядная аналитика и дебиторка.</p>
+                </div>
+
+                <div class="feature-card tilt-card" data-animate>
+                    <div class="feature-icon icon-pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Шаблоны документов</h3>
+                    <p class="feature-desc">Готовые шаблоны с плейсхолдерами. Автозаполнение данных клиента и ваших реквизитов.</p>
+                </div>
+
+                <div class="feature-card tilt-card" data-animate>
+                    <div class="feature-icon icon-cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Облачная синхронизация</h3>
+                    <p class="feature-desc">Supabase в основе. Работайте с любого устройства и никогда не теряйте информацию.</p>
+                </div>
+            </div>
+
+            <div class="features-extra">
+                <div class="feature-row" data-animate>
+                    <div class="feature-row-content">
+                        <div class="feature-row-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-row-text">
+                            <h3>Работа офлайн</h3>
+                            <p>Приложение работает без интернета благодаря локальной базе данных Isar. Все изменения синхронизируются при появлении сети. Не важно, есть ли связь на объекте.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row-image">
+                        <div class="phone-small">
+                            <img src="images/screenshots/screen_profile.jpg" alt="Личный кабинет" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row reverse" data-animate>
+                    <div class="feature-row-content">
+                        <div class="feature-row-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-row-text">
+                            <h3>Максимальная безопасность</h3>
+                            <p>Биометрическая аутентификация, защищенное хранилище, привязка устройства и Row Level Security в Supabase. Ваши данные принадлежат только вам.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row-image">
+                        <div class="phone-small">
+                            <img src="images/screenshots/screen_documents.jpg" alt="Документы" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Showcase Section -->
+    <section class="documents" id="documents">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Документы</span>
+                <h2 class="section-title">Все документы<br><span class="gradient-text">в одном приложении</span></h2>
+                <p class="section-subtitle">Больше не нужен Word, Excel и принтер. Создавайте профессиональные документы за секунды.</p>
+            </div>
+            <div class="documents-grid">
+                <div class="doc-card tilt-card" data-animate>
+                    <div class="doc-preview">
+                        <img src="images/screenshots/screen_invoice_pdf.jpg" alt="Счёт на оплату" loading="lazy">
+                    </div>
+                    <div class="doc-info">
+                        <div class="doc-icon icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3>Счёт на оплату</h3>
+                        <p>С реквизитами, НДС, сроком действия. Отправьте клиенту в один клик.</p>
+                    </div>
+                </div>
+                <div class="doc-card tilt-card" data-animate>
+                    <div class="doc-preview">
+                        <img src="images/screenshots/screen_specification_pdf.jpg" alt="Спецификация" loading="lazy">
+                    </div>
+                    <div class="doc-info">
+                        <div class="doc-icon icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                        </div>
+                        <h3>Спецификация работ</h3>
+                        <p>Перечень работ с ценами, сроками и условиями. Приложение к договору.</p>
+                    </div>
+                </div>
+                <div class="doc-card tilt-card" data-animate>
+                    <div class="doc-preview">
+                        <img src="images/screenshots/screen_act_pdf.jpg" alt="Акт выполненных работ" loading="lazy">
+                    </div>
+                    <div class="doc-info">
+                        <div class="doc-icon icon-green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3>Акт выполненных работ</h3>
+                        <p>Подтверждение выполнения с подписями сторон. Для бухгалтерии и налоговой.</p>
+                    </div>
+                </div>
+                <div class="doc-card tilt-card" data-animate>
+                    <div class="doc-preview">
+                        <img src="images/screenshots/screen_pricelist_pdf.jpg" alt="Прайс-лист" loading="lazy">
+                    </div>
+                    <div class="doc-info">
+                        <div class="doc-icon icon-orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3>Прайс-лист</h3>
+                        <p>Категории работ с ценами. Отправьте потенциальному клиенту за 10 секунд.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="documents-cta" data-animate>
+                <p>И ещё: <strong>Договор подряда</strong>, <strong>Гарантийный талон</strong>, <strong>Коммерческое предложение</strong> — всё с автозаполнением</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Интерфейс</span>
+                <h2 class="section-title">Просто. Красиво.<br><span class="gradient-text">Удобно.</span></h2>
+                <p class="section-subtitle">Интуитивный интерфейс, который не требует обучения. Реальные скриншоты из приложения.</p>
+            </div>
+            <div class="screenshots-slider" data-animate>
+                <div class="screenshots-track">
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_orders_list.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_orders_list.jpg" alt="Список заказов" loading="lazy">
+                        </div>
+                        <p>Список заказов</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_upcoming_orders.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_upcoming_orders.jpg" alt="Предстоящие заказы" loading="lazy">
+                        </div>
+                        <p>Предстоящие заказы</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_documents.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_documents.jpg" alt="Документы" loading="lazy">
+                        </div>
+                        <p>Документы</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_payments.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_payments.jpg" alt="Оплаты" loading="lazy">
+                        </div>
+                        <p>Оплаты</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_analytics.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_analytics.jpg" alt="Аналитика" loading="lazy">
+                        </div>
+                        <p>Аналитика</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_profile.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_profile.jpg" alt="Личный кабинет" loading="lazy">
+                        </div>
+                        <p>Личный кабинет</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_order_finance.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_order_finance.jpg" alt="Финансы заказа" loading="lazy">
+                        </div>
+                        <p>Финансы заказа</p>
+                    </div>
+                    <div class="screenshot-card" data-lightbox="images/screenshots/screen_document_package.jpg">
+                        <div class="screenshot-frame">
+                            <img src="images/screenshots/screen_document_package.jpg" alt="Пакет документов" loading="lazy">
+                        </div>
+                        <p>Пакет документов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Быстрый старт</span>
+                <h2 class="section-title">Начните работу<br><span class="gradient-text">за 3 шага</span></h2>
+                <p class="section-subtitle">Проще, чем кажется. Установка займёт меньше минуты.</p>
+            </div>
+            <div class="steps">
+                <div class="step" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                        </div>
+                        <h3>Установите приложение</h3>
+                        <p>Скачайте из RuStore или по прямой ссылке APK. Регистрация за 30 секунд.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Добавьте клиентов</h3>
+                        <p>Создайте базу клиентов или импортируйте существующую. Заполните свои реквизиты.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Создавайте документы</h3>
+                        <p>Генерируйте договоры, счета и акты в один клик. Отправляйте клиентам сразу из приложения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Тарифы</span>
+                <h2 class="section-title">Доступно<br><span class="gradient-text">для каждого</span></h2>
+                <p class="section-subtitle">Выберите подходящий вариант использования</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-animate>
+                    <div class="pricing-header">
+                        <h3>Бесплатно</h3>
+                        <div class="pricing-price">0 ₽<span>/мес</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Локальная база данных
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            До 50 заказов
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Базовые шаблоны
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            PDF экспорт
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Финансовый учёт
+                        </li>
+                    </ul>
+                    <a href="https://www.rustore.ru/catalog/app/ru.servicedochub.app" class="pricing-btn" target="_blank">Начать бесплатно</a>
+                </div>
+
+                <div class="pricing-card featured" data-animate>
+                    <div class="pricing-badge">Популярный</div>
+                    <div class="pricing-header">
+                        <h3>Премиум</h3>
+                        <div class="pricing-price">299 ₽<span>/мес</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Облачная синхронизация
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Безлимитные заказы
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Все шаблоны документов
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Расширенная аналитика
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Приоритетная поддержка
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            Резервное копирование
+                        </li>
+                    </ul>
+                    <a href="https://www.rustore.ru/catalog/app/ru.servicedochub.app" class="pricing-btn primary" target="_blank">Попробовать 7 дней бесплатно</a>
+                </div>
+            </div>
+            <div class="pricing-note" data-animate>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <p>При первой регистрации вы получаете <strong>7 дней премиум-доступа бесплатно</strong>. Никаких обязательств — отмена в любой момент.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Отзывы</span>
+                <h2 class="section-title">Что говорят<br><span class="gradient-text">мастера</span></h2>
+                <p class="section-subtitle">Реальные истории пользователей приложения</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card tilt-card" data-animate>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Раньше вёл заказы в блокноте — постоянно что-то терял. Сейчас всё в телефоне: заказы, клиенты, деньги. Договор создаю прямо на объекте и сразу отправляю в WhatsApp. Клиенты в восторге от профессионального подхода."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">АП</div>
+                        <div class="testimonial-info">
+                            <strong>Алексей П.</strong>
+                            <span>Сантехник, Москва</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card tilt-card" data-animate>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Веду бригаду из 4 человек. Раньше не понимал, сколько реально зарабатываю — деньги уходили на материалы, зарплаты, а прибыль считал на глазок. Теперь вижу чистую прибыль по каждому заказу. Это изменило мой бизнес."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ДК</div>
+                        <div class="testimonial-info">
+                            <strong>Дмитрий К.</strong>
+                            <span>Бригадир, Санкт-Петербург</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card tilt-card" data-animate>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"ИП с подрядчиками. Документы для налоговой всегда в порядке — акты, счета, спецификации. Налоговая довольна, я спокоен. Плюс база клиентов: теперь знаю, кто мой постоянный клиент и кто должен денег."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">СВ</div>
+                        <div class="testimonial-info">
+                            <strong>Светлана В.</strong>
+                            <span>ИП, Екатеринбург</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card tilt-card" data-animate>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Установил за 2 минуты. Интерфейс интуитивный — разобрался без инструкций. Особенно круто, что работает без интернета: на объектах связь не везде есть, а я всё равно могу создать заказ и потом синхронизировать."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">МР</div>
+                        <div class="testimonial-info">
+                            <strong>Максим Р.</strong>
+                            <span>Электрик, Казань</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card tilt-card" data-animate>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Раньше клиенты торговались, потому что я выглядел "не по-взрослому" — без договоров, без счетов. Теперь приезжаю с планшетом, показываю прайс-лист, оформляю договор на месте. Авторитет вырос, цены перестали сбивать."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ИС</div>
+                        <div class="testimonial-info">
+                            <strong>Игорь С.</strong>
+                            <span>Климат-мастер, Новосибирск</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card tilt-card" data-animate>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Самозанятый. Нужно было приложение для учёта доходов и генерации чеков. Это приложение закрыло все мои потребности — и ещё бонусом дало CRM, документы и аналитику. Лучшие 299 рублей в месяц."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">АК</div>
+                        <div class="testimonial-info">
+                            <strong>Андрей К.</strong>
+                            <span>Самозанятый, Ростов-на-Дону</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Частые вопросы</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Можно ли использовать приложение без интернета?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да! Приложение использует локальную базу данных Isar и полностью функционирует без подключения к интернету. Создавайте заказы, клиентов и документы в любой точке. Синхронизация с облаком происходит автоматически при появлении сети.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Какие документы можно создавать?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Договоры оказания услуг, квитанции об оплате, акты выполненных работ, гарантийные талоны, спецификации, счета на оплату, коммерческие предложения и прайс-листы. Все документы экспортируются в PDF с автозаполнением ваших данных.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Безопасны ли мои данные?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Абсолютно. Мы используем шифрованное хранилище, биометрическую аутентификацию, привязку устройства и Row Level Security в Supabase. Ваши данные принадлежат только вам и защищены на уровне банковских стандартов.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Есть ли пробный период?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да! При первой регистрации вы получаете 7 дней бесплатного доступа ко всем премиум-возможностям. Никаких обязательств — отмена в любой момент. Также доступен полностью бесплатный тариф с базовым функционалом.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Можно ли перенести данные с другого приложения?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>В настоящее время поддерживается ручной ввод и импорт клиентов. Функция импорта из Excel и других приложений находится в разработке и появится в ближайшем обновлении.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>На каких платформах работает приложение?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Основная платформа — Android (6.0 и выше). Приложение оптимизировано для смартфонов и планшетов. Версии для iOS и Web находятся в планах разработки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate>
+                <h2>Готовы взять бизнес<br><span class="gradient-text">под контроль?</span></h2>
+                <p>Скачайте приложение прямо сейчас и получите 7 дней премиум-доступа бесплатно.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.rustore.ru/catalog/app/ru.servicedochub.app" class="btn-primary large magnetic" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        Скачать в RuStore
+                    </a>
+                    <a href="https://cloudbeeline.ru/links/fs/gDpeP4KGTZChnLbXnvKIYw" class="btn-secondary large magnetic" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                        </svg>
+                        Скачать APK
+                    </a>
+                </div>
+                <div class="cta-alt">
+                    <a href="https://4pda.to/forum/index.php?showtopic=1106903" class="cta-alt-link" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+                        Обсудить на 4PDA
+                    </a>
+                </div>
+                <p class="cta-note">Бесплатная установка · Пробный период 7 дней · Работает офлайн</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        <span>Учет Услуг</span>
+                    </div>
+                    <p>Мобильное приложение для учета заказов, клиентов и финансов. Генерация профессиональных документов за секунды.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Приложение</h4>
+                    <a href="#features">Возможности</a>
+                    <a href="#screenshots">Скриншоты</a>
+                    <a href="#pricing">Тарифы</a>
+                    <a href="#day">Как это работает</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Поддержка</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="https://www.rustore.ru/catalog/app/ru.servicedochub.app" target="_blank">RuStore</a>
+                    <a href="https://4pda.to/forum/index.php?showtopic=1106903" target="_blank">4PDA</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <a href="mailto:support@servicedochub.ru">support@servicedochub.ru</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Учет Услуг. Все права защищены.</p>
+                <p>Версия 2.1.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Закрыть">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <img src="" alt="" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>
